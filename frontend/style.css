@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Light gray background */
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center align text */
+}
+
+.container {
+    max-width: 600px; /* Maximum width for the content */
+    margin: 40px auto; /* Center the content with some margin */
+    padding: 20px;
+    background-color: #ffffff; /* White background for the content area */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+}
+
+
+/* Make the categories appear side by side */
+.categories-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures it wraps on smaller screens */
+    justify-content: center; /* Centers the categories */
+    gap: 20px; /* Adds spacing between categories */
+    margin-top: 20px;
+}
+
+.category {
+    text-align: center;
+    width: 120px; /* Fixed width ensures consistent alignment */
+}
+
+.category h5 {
+    margin: 5px 0; /* Reduce space around category name */
+}
+
+.category img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* Ensures image fits within the box */
+    border-radius: 5px; /* Optional: rounded corners */
+}
+
+h1, h2, h3 {
+    color: #008000; /* Green heading color */
+}
+
+button {
+    padding: 10px 20px; /* Button padding */
+    background-color: #007bff; /* Blue background for the button */
+    color: #ffffff; /* White text color for the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.feedback-section {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+}
+.feedback-bubbles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.feedback-bubble {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 20px; /* Add some space above the result */
+    padding: 10px; /* Add some padding to the result area */
+    background-color: #f9f9f9; /* Light gray background for the result */
+    border: 1px solid #ddd; /* Light gray border for the result */
+    border-radius: 5px; /* Rounded corners for the result */
+    text-align: center; /* Center align result text */
+}
+
+input[type="file"] {
+    display: block;
+    margin: 10px auto; /* Center the file input */
+}

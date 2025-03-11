@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classifier</title>
+    <link rel="stylesheet" href="style.css">   <!-- to link external files, here stylesheet reps css file-->
+</head>
+<body>
+    <div class="Container">
+        <h1>Image Classifier</h1>
+        <h2>Welcome to the Image Classifier App!</h2>
+        <h3>Please Upload an Image</h3>
+        <h4>Limitations:</h4>
+        <p>
+            File size should be less than <strong>10 MB</strong> <br>
+            Images could be of following types
+        <p>
+
+        <!-- Categories and images section -->
+        <div class="categories-container">
+            <div class="category">
+                <h5>airplane</h5>
+                <img src="images/airplane.avif" alt="airplane">
+            </div>
+            <div class="category">
+                <h5>automobile</h5>
+                <img src="images/automobile.webp" alt="automobile">
+            </div>
+            <div class="category">
+                <h5>bird</h5>
+                <img src="images/bird.webp" alt="bird">
+            </div>
+            <div class="category">
+                <h5>cat</h5>
+                <img src="images/cat.avif" alt="cat">
+            </div>
+            <div class="category">
+                <h5>deer</h5>
+                <img src="images/deer.jpg" alt="deer">
+            </div>
+            <div class="category">
+                <h5>dog</h5>
+                <img src="images/dog.jpg" alt="dog">
+            </div>
+            <div class="category">
+                <h5>frog</h5>
+                <img src="images/frog.jpg" alt="frog">
+            </div>
+            <div class="category">
+                <h5>horse</h5>
+                <img src="images/horse.webp" alt="horse">
+            </div>
+            <div class="category">
+                <h5>ship</h5>
+                <img src="images/ship.jpg" alt="ship">
+            </div>
+            <div class="category">
+                <h5>truck</h5>
+                <img src="images/truck.jpeg" alt="truck">
+            </div>
+        </div>
+
+        <!-- Upload section -->
+        <div class="input-section">
+            <input type="file" id="imageUpload" accept="image/*">
+            <button id="upload_image" onclick="uploadImage()">Upload Image</button> 
+        </div>    
+
+        <div id="result"></div>
+
+        <div id="prediction_section">
+            <p id = "feedback_text"> Help us imporve our model</p>
+            <p id = "feedback_text"> Was this prediction correct?</p>
+            <button onclick="confirmCorrectPrediction()">Yes, the prediction is correct</button>
+
+            <p>If the prediction is wrong, please select the correct category:</p>
+            <div class="feedback-bubbles" id="bubbleContainer"></div>
+        </div>
+
+        <div id="prediction_section">
+            <p id = "feedback_text"></p>
+            <button id = "correct-prediction" onclick="confirmCorrectPrediction()"></button>
+            <button id = "wrong-prediction" onclick="confirmWrongPrediction()"></button>
+            
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
